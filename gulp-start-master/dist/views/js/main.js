@@ -529,7 +529,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
   //i < 23 in the loop is used for faster rendering without affecting functionality
-  for (var i = 0; i < 23; i++) {
+  for (var i = 0; i < 24; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";

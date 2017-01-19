@@ -11,11 +11,6 @@ var gulp = require('gulp'),
         .pipe(inlineCss())
         .pipe(gulp.dest('dist/css'));
     });
-    gulp.task('minify-css', function() {
-      return gulp.src('source/css/*.css')
-      .pipe(cleanCSS())
-      .pipe(gulp.dest('dist'));
-    });
     gulp.task("imgmin1", () =>
         gulp.src('source/img/*')
         .pipe(imagemin())
@@ -28,4 +23,4 @@ var gulp = require('gulp'),
     );
 
 
-gulp.task('default',['inline', "minify-css", "imgmin1", "imgmin2"]);
+gulp.task('default',['inline', "imgmin1", "imgmin2"]);
