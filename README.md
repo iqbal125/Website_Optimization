@@ -1,41 +1,26 @@
-# Website_Optimization
-
+(37 sloc)  1.75 KB
 *******WEBSITE OPTIMIZATION*******
 
 
 ****Using Gulp****
 
+
 Step 1
-Download Node.js from https://nodejs.org
+"npm install gulp -g" to install Gulp.
 
 Step 2
-Open Command Line. (Windows: Windows+r -> Type "cmd" -> Enter).
+"cd" (change folder) to source folder
 
-Step 3
-Type "node -v" in terminal to make sure node.js installed correctly.
+-Used gulp inline css to automatically get rid of whitespace
+-Used gulp imgmin to compress all images in "source/img" folder
+-Used gulp imgmin to compress all images in "source/views/images" folder
 
-Step 4
-Type "npm install gulp -g" to install Gulp.
-
-Step 5
-Type "cd" (change folder) followed by which ever folder you want the project to be in.
-
-Step 6
-Type "npm install gulp --save-dev" to save locally for the project.
-
-Step 7
-Create a gulpfile.js in the texteditor to begin writing the Gulp code.
-
-
-
-**Plugins**
-If Gulp were a car, the plugins are the gasoline to make it run. There are many plugins available at http://gulpjs.com/plugins/
 
 
 *Syntax*
 
 // include gulp
-var gulp = require('gulp'); 
+var gulp = require('gulp');
 
 // include plug-ins
 var plugin = require('gulp-plugin');
@@ -63,7 +48,7 @@ used @font-face in css instead of url for font, line 11 solving rendering block 
 used gulp for rest of optimizations which include:
 
 minifying css, which gets rid of whitespaces and increases speed
-clean css, works in conjuction with and has similar functionality to minify css 
+clean css, works in conjuction with and has similar functionality to minify css
 imagemin, which compresses images and allows faster rendering
 cmq, which combines media queries
 
@@ -71,8 +56,8 @@ cmq, which combines media queries
 
 in views/js/main.js
 
-Used 23 iterations instead of 200 in the loop for generating sliding pizzas, used for faster rendering without affecting functionality
+Used 24 iterations instead of 200 in the loop for generating sliding pizzas, used for faster rendering without affecting functionality
 
-Improved efficiency in the for-loop for updating pizza positions by separating for-loop into 3 components for more efficient calculations. See //code comments for more details. 
-Reduced Image resize time from 100ms to .4 ms by implementing very efficient for-loop, see 
+Improved efficiency in the for-loop for updating pizza positions by separating for-loop into 3 components for more efficient calculations. See //code comments for more details.
+Reduced Image resize time from 100ms to .4 ms by implementing very efficient for-loop, see
 //code comments for more details.
