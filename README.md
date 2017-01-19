@@ -12,6 +12,7 @@ Step 2
 "cd" (change folder) to source folder
 
 -Used gulp inline css to automatically get rid of whitespace
+
 -Used gulp imgmin to compress all images in "source/img" folder
 -Used gulp imgmin to compress all images in "source/views/images" folder
 
